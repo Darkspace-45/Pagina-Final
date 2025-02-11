@@ -5,7 +5,7 @@ let currentLanguage = localStorage.getItem(languageKey) || defaultLanguage;
 
 // Objeto con las rutas de las banderas y textos alternativos
 const flagData = {
-    es: { src: "img/bandera_Ecuador.png", alt: "English" },
+    es: { src: "img/ecuador1.png", alt: "English" },
     en: { src: "img/bandera_eu.png", alt: "Español" }
 };
 
