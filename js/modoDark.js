@@ -12,7 +12,10 @@
             ".section-title h2",
             ".about-right h1",
             "#services .service-card h4",
-            "#services-kichwa .service-card h4"
+            "#services-kichwa .service-card h4",
+            // Añadir los nuevos elementos de la sección de contacto
+            ".contact-details h5",
+            ".contact-details p"
         ];
 
         elementsToToggle.forEach(selector => {
@@ -23,7 +26,7 @@
         const invertElements = [
             ".testi-item img",
             "#services .service-card .icon-box i",
-            "#services-kichwa .service-card .icon-box i" 
+            "#services-kichwa .service-card .icon-box i"
         ];
 
         invertElements.forEach(selector => {

@@ -35,83 +35,53 @@
 </head>
 
 <body>
-    <!-- ================ Start Header Area ================= -->
-    <header class="default-header">
+	<!-- ================ Start Header Area ================= -->
+	<header class="default-header">
 		<nav class="navbar navbar-expand-lg navbar-light">
-		  <div class="container">
-			<a class="navbar-brand" href="index.html">
-				<img src="img/logo-huaira-top.png" alt="Logo Huaira" class="logo">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo-huaira-top.png" alt="Logo Huaira" class="logo">
 
-			</a>
-			<button
-			  class="navbar-toggler"
-			  type="button"
-			  data-toggle="collapse"
-			  data-target="#navbarSupportedContent"
-			  aria-controls="navbarSupportedContent"
-			  aria-expanded="false"
-			  aria-label="Toggle navigation"
-			>
-			  <span class="lnr lnr-menu"></span>
-			</button>
-  
-			<div
-			  class="collapse navbar-collapse justify-content-end align-items-center"
-			  id="navbarSupportedContent"
-			>
-			  <ul class="navbar-nav">
-				<li>
-				  <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
-				</li>
-				<li>
-				  <a href="about.html" data-es="Nosotros" data-en="About"
-					>Nosotros</a
-				  >
-				</li>
-				<li>
-				  <a href="courses.html" data-es="Programas" data-en="Programs"
-					>Programas</a
-				  >
-				</li>
-				<li>
-				  <a
-					href="course-details.html"
-					data-es="Shigra Digital"
-					data-en="Digital Shigra"
-					>Shigra Digital</a
-				  >
-				</li>
-				<li>
-				  <a
-					href="blog-home.html"
-					data-es="Medios & Comunicados"
-					data-en="Media & Communications"
-					>Medios & Comunicados</a
-				  >
-				</li>
-				<li>
-				  <a href="contacts.html" data-es="Contacto" data-en="Contact"
-					>Contacto</a
-				  >
-				</li>
-			  </ul>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="lnr lnr-menu"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end align-items-center"
+					id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li>
+							<a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+						</li>
+						<li>
+							<a href="about.html" data-es="Nosotros" data-en="About">Nosotros</a>
+						</li>
+						<li>
+							<a href="courses.html" data-es="Programas" data-en="Programs">Programas</a>
+						</li>
+						<li>
+							<a href="course-details.html" data-es="Shigra Digital" data-en="Digital Shigra">Shigra
+								Digital</a>
+						</li>
+						<li>
+							<a href="blog-home.html" data-es="Medios & Comunicados"
+								data-en="Media & Communications">Medios & Comunicaciones</a>
+						</li>
+						<li>
+							<a href="contacts.html" data-es="Contacto" data-en="Contact">Contacto</a>
+						</li>
+					</ul>
+				</div>
+				<button onclick="toggleDarkMode()" class="theme-toggle bg-transparent">
+					<span id="themeIcon">☀️</span>
+				</button>
+				&nbsp; &nbsp;
+				<img id="flag-image" src="img/programas/ecuador.jpg" alt="English" />
 			</div>
-			<button
-			  onclick="toggleDarkMode()"
-			  class="theme-toggle bg-transparent"
-			>
-			  <span id="themeIcon">☀️</span>
-			</button>
-			&nbsp; &nbsp;
-			<img
-			  id="flag-image"
-			  src="img/programas/ecuador.jpg"
-			  alt="English"
-			  
-			/>
-		  </div>
 		</nav>
-	  </header>
+	</header>
 	<!-- ================ End Header Area ================= -->
 
 	<!-- ================ start banner Area ================= -->
@@ -139,12 +109,8 @@
 	<section class="contact-page-area section-gap">
 		<div class="container">
 			<div class="row">
-				<div class="map-wrap" style="width:100%; height: 445px;" >
-					<iframe
-					src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d352.64994074294543!2d-78.54333163111576!3d-0.25556082578735784!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1737945949777!5m2!1ses-419!2sec"
-					width="100%" height="445"
-					style="border:0; object-fit: contain; border-radius: 8px; margin-right: 5px;" allowfullscreen=""
-					loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="map-wrap" style="width:100%; height: 445px;">
+					<iframe width="100%" height="445" src="https://www.openstreetmap.org/export/embed.html?bbox=-78.54452937841417%2C-0.2564719695079363%2C-78.54247480630876%2C-0.25490557504071437&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=19/-0.255689/-78.543502">Ver el mapa más grande</a></small>
 				</div>
 				<div class="col-lg-4 d-flex flex-column address-wrap">
 					<div class="single-contact-address d-flex flex-row">
@@ -179,18 +145,19 @@
 				</div>
 
 				<div class="col-lg-8">
-					<form id="contactForm" class="form-area contact-form text-right" action="https://formsubmit.co/jmfranco103@gmail.com" method="POST">
+					<form id="contactForm" class="form-area contact-form text-right"
+						action="https://formsubmit.co/jmfranco103@gmail.com" method="POST">
 						<div class="row">
 							<div class="col-lg-6 form-group">
 								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = 'Enter your name'"
 									class="common-input mb-20 form-control" required="" type="text">
-				
+
 								<input name="email" placeholder="Enter email address"
 									pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
 									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
 									class="common-input mb-20 form-control" required="" type="email">
-				
+
 								<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
 									required="" type="text">
@@ -202,11 +169,12 @@
 							</div>
 							<div class="col-lg-12">
 								<div class="alert-msg" style="text-align: left;"></div>
-								<button type="submit" class="btn" style="float: right; border-radius: 35px;" data-es='Enviar'
-									data-en='Send'>Enviar</button>
+								<button type="submit" class="btn" style="float: right; border-radius: 35px;"
+									data-es='Enviar' data-en='Send'>Enviar</button>
 							</div>
 							<div class="col-lg-12">
-								<input type="hidden" name="_next" value="http://127.0.0.1:5500/Fundacion-NuevoDiseno-master/index.html">
+								<input type="hidden" name="_next"
+									value="http://127.0.0.1:5500/Fundacion-NuevoDiseno-master/index.html">
 							</div>
 							<div class="col-lg-12">
 								<input type="hidden" name="_captcha" value="false">
@@ -214,14 +182,14 @@
 						</div>
 					</form>
 				</div>
-			
-				
+
+
 			</div>
 		</div>
 	</section>
 
 	<script>
-		document.getElementById("contactForm").addEventListener("submit", function(event) {
+		document.getElementById("contactForm").addEventListener("submit", function (event) {
 			setTimeout(() => {
 				event.target.reset(); // Limpia el formulario después del envío
 			}, 1000); // Espera 1 segundo para asegurar el envío
@@ -277,12 +245,9 @@
 			</div>
 			<div class="footer-bottom row align-items-center">
 				<p class="footer-text m-0 col-lg-8 col-md-12">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;
-					<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
-					made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-						target="_blank">Colorlib</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright Huaira&copy;
+					<script>document.write(new Date().getFullYear());
+					</script> Derechos Reservados | All rights reserved
 				</p>
 				<div class="col-lg-4 col-md-12 footer-social">
 					<a href="#"><i class="fa fa-facebook"></i></a>
